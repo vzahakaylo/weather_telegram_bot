@@ -1,8 +1,9 @@
 require 'rest-client'
+require_relative 'keys'
 
 class Weather
   API_URL = 'api.openweathermap.org/data/2.5/'.freeze
-  APPID = '7aaa032eda0a7657ef53650d9be6e4d8'.freeze
+  APPID = $weather_token
 
   attr_reader :city
 
